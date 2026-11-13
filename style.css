@@ -1,0 +1,572 @@
+
+/* =================================
+   COMMON CSS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ 
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.48)),
+        url(images/img-1\ 1.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+
+}
+
+
+/* =================================
+   TOP BAR
+================================= */
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 0;
+    z-index: 10;
+}
+
+.contact-info { 
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info a {
+     font-family: 'Lato', sans-serif;
+     font-size: 14px;
+     font-weight: 600;
+    color: white;
+}
+
+.contact-info i {
+     font-family: 'Lato', sans-serif;
+     font-size: 14px;
+     font-weight: 500;
+    margin-right: 4px;
+}
+
+.social-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 9px;
+    color: white;
+}
+
+.social-top span {
+    margin-right: 5px;
+}
+
+
+/* =================================
+   NAVBAR
+================================= */
+
+.main-navbar {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-size: 14px;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 5px 0;
+}
+
+.main-navbar .navbar-nav {
+    gap: 4px;
+}
+
+.main-navbar .nav-link {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 11px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.main-navbar .nav-link:hover {
+    color: #ffcf32;
+}
+
+.main-navbar .nav-link.active {
+    background-color: white;
+    color: #e5b91c;
+}
+
+.main-navbar .nav-link i {
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.nav-search {
+    border-left: 1px solid rgba(255,255,255,0.4);
+    margin-left: 5px;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+/* =================================
+   HERO CONTENT
+================================= */
+
+.hero-content {
+    
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.hero-content p {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-size: 18px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-size: 55px;
+    color: white;
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about-section {
+    padding: 65px 0 18px;
+    background-color: white;
+}
+
+.about-left {
+    padding: 0 25px 0 15px;
+}
+
+.section-label {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+    display: block;
+    letter-spacing: 5px;
+    color:#797979;
+    margin-bottom: 14px;
+}
+
+.about-left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    line-height: 1.35;
+    font-weight: 500;
+    color:#575757;
+}
+
+.about-left h2 span {
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.wave-line {
+    color: #35c7c5;
+    font-size: 23px;
+    letter-spacing: -5px;
+    margin-top: 24px;
+}
+
+.about-text {
+    padding: 25px 0 0 10px;
+}
+
+.about-text p {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+/* =================================
+   GALLERY SECTION
+================================= */
+
+.gallery-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-section img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =================================
+   QUOTE SECTION
+================================= */
+
+.quote-section {
+    padding: 60px 0 65px;
+    text-align: center;
+    background: white;
+}
+
+.quote-content {
+    max-width: 630px;
+    margin: auto;
+}
+
+.quote-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 2.1;
+    color: #4B5563;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.quote-content h5 {
+     font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4F4F4F;
+    margin-bottom: 7px;
+}
+
+.quote-content span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: block;
+    color: #a4aabd;
+    font-size: 14px;
+}
+
+
+/* =================================
+   ADDED VALUE SECTION
+================================= */
+
+.added-value-section {
+    background-color: #ffd536;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.added-content {
+    max-width: 950px;
+    margin: auto;
+    color: white;
+}
+
+.added-content h6 {
+     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.added-content p {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.added-content h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+/* =================================
+   NEWSLETTER SECTION
+================================= */
+
+.newsletter-section {
+    position: relative;
+    padding: 12px 0;
+    color: white;
+
+    /* YAHAN FIGMA SE NEWSLETTER BACKGROUND IMAGE LAGANA */
+    background-image:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url('images/img-1\ 1.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.newsletter-section h4 {
+     font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.newsletter-section p {
+    font-family: 'Montserrat', sans-serif;
+     font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+   
+}
+
+.newsletter-form .form-control {
+    font-family: 'Montserrat', sans-serif;
+    height: 51px;
+    border-radius: 0;
+    border: none;
+    font-size: 12px;
+    padding: 8px 12px;
+     border-radius: 10px 0 0 0;
+}
+
+.subscribe-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffce2f;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 0;
+    padding: 0 15px;
+      border-radius: 0 0 10px 0;
+}
+
+.subscribe-btn:hover {
+    background-color: #e8b91e;
+    color: white;
+}
+
+
+/* =================================
+   FOOTER SECTION
+================================= */
+
+.footer-section {
+    background-color:#262525;
+    color: white;
+    padding-top: 25px;
+}
+
+.footer-about {
+    padding-right: 20px;
+}
+
+.footer-logo {
+    width: 162px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #ddd;
+}
+
+.footer-column h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-underline {
+    width: 60px;
+    height: 2px;
+    background-color: #ffcc30;
+    margin-bottom: 23px;
+}
+
+.footer-column h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-column p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #F5F5F5;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    font-family: 'Poppins', sans-serif;
+     
+
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    font-weight: 400;
+    font-size: 15px;
+  
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc30;
+}
+
+
+/* =================================
+   FOOTER SOCIAL ICONS
+================================= */
+
+.footer-social {
+    display: flex;
+    gap: 5px;
+    margin-top: 28px;
+}
+
+.footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+}
+
+.facebook {
+    background: #4267a9;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.youtube {
+    background: #e62117;
+}
+
+.linkedin {
+    background: #0877a9;
+}
+
+
+/* =================================
+   WEBSITE LANGUAGE
+================================= */
+
+.website-language {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.website-language i {
+    color: #24a6d2;
+    font-size: 26px;
+}
+
+
+/* =================================
+   COPYRIGHT SECTION
+================================= */
+
+.copyright-section {
+    
+    background-color: #1e1e1e;
+    padding: 12px 0 8px;
+    text-align: center;
+}
+
+.copyright-section p {
+     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+     font-weight: 400;
+    color: #ddd;
+    margin-bottom: 12px;
+}
+
+.bottom-links {
+    
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    display: flex;
+   
+    gap: 20px;
+}
+
+.bottom-links a {
+     font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+     font-weight: 400;
+    color:#FFFFFF;
+}
+
+.bottom-links a:hover {
+    color: #ffcc30;
+}
+
+
